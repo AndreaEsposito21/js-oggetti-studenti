@@ -49,7 +49,7 @@ var arrayStudenti = [
 ];
 
 //
-// Ciclo For per gli studenti e For-in con stampa
+// Ciclo For per gli studenti e For-in con stampa - aggiunto solo per chiarezza all'es 2, basta il ciclo dell'es 3 -
 //
 for (var i = 0; i < arrayStudenti.length; i++) {
     var thisStudenti = arrayStudenti[i];
@@ -77,7 +77,9 @@ var nuovoStudente = {
 };
 
 arrayStudenti.push(nuovoStudente);
-
+//
+// Ciclo For per gli studenti e For-in con stampa
+//
 for (var j = 0; j < arrayStudenti.length; j++) {
     var thisNuoviStudenti = arrayStudenti[j];
     console.log('Esercizio 3: ', thisNuoviStudenti);
