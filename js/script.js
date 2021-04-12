@@ -61,3 +61,30 @@ for (var i = 0; i < arrayStudenti.length; i++) {
 };
 //
 // Fine Es. 2 --------------------------------- ->
+
+// Es. 3 --------------------------------- ->
+//
+// Creo più variabili dove chiedo all'utente di inserire i dati e una variabile oggetto che le conterrà e che pusherò nell'arrayStudenti
+//
+var nuovoNome = prompt('Inserisci Nome');
+var nuovoCognome = prompt('Inserisci Cognome');
+var nuovaEta = parseInt(prompt("Inserisci l'età"));
+
+var nuovoStudente = {
+    'nome': nuovoNome,
+    'cognome': nuovoCognome,
+    'eta': nuovaEta
+};
+
+arrayStudenti.push(nuovoStudente);
+
+for (var j = 0; j < arrayStudenti.length; j++) {
+    var thisNuoviStudenti = arrayStudenti[j];
+    console.log('Esercizio 3: ', thisNuoviStudenti);
+
+    for (var clef in thisNuoviStudenti) {
+        console.log( clef + ' ' + thisNuoviStudenti[clef]);
+    };
+};
+//
+// Fine Es. 3 --------------------------------- ->
